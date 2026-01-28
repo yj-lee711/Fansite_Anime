@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nekoma</title>
+    <link rel="stylesheet" href="form-yinju.css">
+</head>
+
+<body>
+    <h1>Nekoma Fan Community Form</h1>
+    <form onsubmit="handleSubmit(event)">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="age">Age</label>
+        <input type="number" id="age" name="age" min="1" required>
+
+        <label for="gender">Gender</label>
+        <select id="gender" name="gender" required>
+            <option value="" disabled selected>Select your gender</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Prefer not to say">Prefer not to say</option>
+        </select>
+
+        <label for="favCharacter">Favorite Character</label>
+        <select name="player" id="player" required>
+            <option value="" disabled selected>Select your favorite player</option>
+            <option value="Taketora Yamamoto">Taketora Yamamoto</option>
+            <option value="Tetsurō Kuroo">Tetsurō Kuroo</option>
+            <option value="Nobuyuki Kai">Nobuyuki Kai</option>
+            <option value="Morisuke Yaku">Morisuke Yaku</option>
+            <option value="Kenma Kozume">Kenma Kozume</option>
+            <option value="Shōhei Fukunaga">Shōhei Fukunaga</option>
+            <option value="Sō Inuoka">Sō Inuoka</option>
+            <option value="Lev Haiba">Lev Haiba</option>
+        </select>
+        <label for="reason">Why do you love Haikyuu?</label>
+        <textarea id="reason" name="reason" rows="4" required></textarea>
+
+        <label>Community Engagement<br><small>How do you want to participate? </small></label>
+        <div class="checkbox-group">
+            <label><input type="checkbox" name="engagement" value="Discussions & Theories"> Discussions & Theories</label>
+            <label><input type="checkbox" name="engagement" value="Fan Art/Edits Sharing"> Fan Art/Edits Sharing</label>
+            <label><input type="checkbox" name="engagement" value="Watch Parties"> Watch Parties (Anime/Manga)</label>
+            <label><input type="checkbox" name="engagement" value="Gaming"> Gaming (Haikyuu!! games, tournaments)</label>
+            <label><input type="checkbox" name="engagement" value="Cosplay & Events"> Cosplay & Events</label>
+        </div>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <script>
+        function handleSubmit(event) {
+            event.preventDefault(); 
+            alert('Thank you for submission!');
+            window.location.href = 'community.html'; 
+        }
+    </script>
+</body>
+</html>
