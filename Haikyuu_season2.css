@@ -1,0 +1,27 @@
+body {
+    margin: 0;
+    height: 100vh;
+    background-image: url("animanga pics/Haikyuu2.png"); 
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+}
+
+.rectangle {
+    width: auto;
+    height: auto;
+    margin-left: 15% ;
+    margin-right: 15%;
+    background-color: rgba(0, 0, 0, 0.6); /* semi-transparent black */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.4);
+    border-radius: 10px; /* optional, makes corners slightly rounded */
+}

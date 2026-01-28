@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>teams</title>
+    <link rel="stylesheet" href="teams.css">
+   </head>
+
+   <body>
+    <iframe src="header.html" class="header-frame" scrolling="no" frameborder="0"> </iframe>
+    <!--Slideshow container-->
+    <div class="slideshow-container">
+
+        <!--Full-width images with number and caption text-->
+        
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 13</div>
+            <video width="100%" controls autoplay poster="teams/poster.jpg">
+            <source src="teams/Haikyuu's Top 20 Epic Anime Highlights! _ 4K 60FPS Blu-ray.mp4" type="video/mp4">
+            </video>
+            <div class="text">Haikyuu top 20 moments</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 13</div>
+            <img src="teams/𝑭𝒖𝒌𝒖𝒓𝒐𝒅𝒂𝒏𝒊 _ 𝑯𝒂𝒊𝒌𝒚𝒖𝒖.jpg" style="width:100%;">
+            <div class="text">Fukurodani</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext"> 3/ 13</div>
+            <img src="teams/shiratorizawa.jpg" style="width: 100%;">
+            <div class="text">Shiratorizawa</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext"> 4/ 13</div>
+            <img src="teams/Tokonami Team.jpg" style="width: 100%;">
+            <div class="text">Tokonami</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext"> 5/ 13</div>
+            <img src="teams/date tech.jpg" style="width: 100%;">
+            <div class="text">Date Tech</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext"> 6/ 13</div>
+            <img src="teams/Nohebi _ Haikyuu!!.jpg" style="width: 100%;">
+            <div class="text">Nohebi</div>
+        </div>
+
+         <div class="mySlides fade">
+            <div class="numbertext"> 7/ 13</div>
+            <img src="teams/karasuno.jpg" style="width: 100%;">
+            <div class="text">Karasuno</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext"> 8/ 13</div>
+            <img src="teams/Aoba Johsai Team.jpg" style="width: 100%;">
+            <div class="text">Aoba Johsai</div>
+        </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext"> 9/ 13</div>
+            <img src="teams/Nekoma.jpg" style="width: 100%;">
+            <div class="text">Nekoma</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext"> 10/ 13</div>
+            <img src="teams/Tsubakihara.jpg" style="width: 100%;">
+            <div class="text">Tsubakihara</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext"> 11/ 13</div>
+            <img src="teams/Jozenji.jpg" style="width: 100%;">
+            <div class="text">Jozenji</div>
+        </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext"> 12/ 13</div>
+            <img src="teams/Inarizaki - HAIKYUU.jpg" style="width: 100%;">
+            <div class="text">Inarizaki</div>
+        </div>
+
+         <div class="mySlides fade">
+            <div class="numbertext"> 13/ 13</div>
+            <img src="teams/Wakutani Minami.jpg" style="width: 100%;">
+            <div class="text">wakutani Minami</div>
+        </div>
+
+        <a class="prev"
+        onclick="plusSlides(-1)">❮</a>
+        <a class="next"
+        onclick="plusSlides(1)">❯</a>
+    </div>
+    <br>
+
+    <div style="text-align: center;">
+        <span class="dot"
+        onclick="currentSlide(1)"></span>
+        <span class="dot"
+        onclick="currentSlide(2)"></span>
+        <span class="dot"
+        onclick="currentSlide(3)"></span>
+        <span class="dot"
+        onclick="currentSlide(4)"></span>
+        <span class="dot"
+        onclick="currentSlide(5)"></span>
+        <span class="dot"
+        onclick="currentSlide(6)"></span>
+        <span class="dot"
+        onclick="currentSlide(7)"></span>
+        <span class="dot"
+        onclick="currentSlide(8)"></span>
+        <span class="dot"
+        onclick="currentSlide(9)"></span>
+        <span class="dot"
+        onclick="currentSlide(10)"></span>
+        <span class="dot"
+        onclick="currentSlide(11)"></span>
+        <span class="dot"
+        onclick="currentSlide(12)"></span>
+    </div>
+
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+       function plusSlides(n) {
+            showSlides(slideIndex +=n)
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n)
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";
+            dots[slideIndex-1].className += " active";
+        }
+    </script>
+
+    <br> 
+
+    <h1 class="title">Please click on the images to access team statistics</h1>
+
+<div class="img-grid">
+    
+    <a href="team_Fukustats.html"><img src="teams/fukurodani logo.jpg" alt="fukurodani statistics" class="FukurodaniStatistics"></a>
+    <a href="team_ShiraStats.html"><img src="teams/shiratorizawa logo.jpg" alt="Shiratorizawa statistics" class="ShiratorizawaStatistics"></a>
+    <a href="team_TokoStats.html"><img src="teams/toko logo.jpg" alt="Tokonami statistics" class="TokonamiStatistics"></a>
+    <a href="team_dateStats.html"><img src="teams/DATE TECH HIGH.jpg" alt="Date Tech statistics" class="DateTechStatistics"></a>
+    <a href="teams_noheStats.html"><img src="teams/NOHEBI ACADEMY.jpg" alt="Nohebi statistics" class="NohebiStatistics"></a>
+    <a href="team_karaStats.html"><img src="teams/karasuno logo.jpg" alt="Karasuno statistics" class="KarasunoStatistics"></a>
+
+    <br>
+
+    <a href="team_AobaStats.html"><img src="teams/aoba johsai.jpg" alt="Aoba Johsai statistics" class="AobaJohsaiStatistics"></a>
+    <a href="team_nekoStats.html"><img src="teams/nekoma logo.jpg" alt="Nekoma statistics" class="NekomaStatistics"></a>
+    <a href="teams_TsuStats.html"><img src="teams/tsu logo.png" alt="Tsubakihara Statistics" class="TsubakiharaStatistics"></a>
+    <a href="team_johzStats.html"><img src="teams/johzenji logo.jpg" alt="Jozenji Statistics" class="JozenjiStatistics"></a>
+    <a href="team_inaStats.html"><img src="teams/inarizaki logo.jpg" alt="Inarizaki Statistics" class="InarizakiStatistics"></a>
+    <a href="team_wakuStats.html"><img src="teams/waku logo.jpg" alt="Wakutani Minami Statistics" class="WakutaniMinamiStatistics"></a>
+</div>
+</body>
+</html>

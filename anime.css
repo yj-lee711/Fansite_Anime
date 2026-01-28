@@ -1,0 +1,39 @@
+.header-frame {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    margin: 0;
+    border: none;      
+    overflow: hidden;  
+}
+
+.image-row {
+      display: flex;
+      gap: 20px; /* space between images */
+      justify-content: left;
+      align-items: center;
+      margin-left: 5%;
+      margin-top: 50px;
+      flex-wrap: wrap;
+    }
+
+
+    .image-row a img {
+      width: 200px;
+      height: auto;
+      margin-top: 20%;
+      border: 2px solid #ccc;
+      border-radius: 10px;
+      transition: transform 0.3s;
+    }
+
+    .image-row a img:hover {
+      transform: scale(1.05);
+      border-color: #666;
+    }
+
+    body {
+      background-color: #f49030;
+    }

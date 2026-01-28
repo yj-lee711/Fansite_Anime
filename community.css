@@ -1,0 +1,53 @@
+.header-frame {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    margin: 0;
+    border: none;      
+    overflow: hidden;  
+}
+
+input[type="radio"] {
+      display: none;
+}
+
+.selectable-img {
+    cursor: pointer;
+}
+
+body {
+    padding-top: 55px;
+    background-color: #192841;
+}
+
+.title {
+    text-align: center;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color:rgb(255, 255, 255);
+}
+
+.xiaogu, .bainiaoze, .changbo, .yida{
+    width: 26%;
+    height: 105px;
+    left: 40px;
+    position: relative;
+    border-radius: 15px;
+}
+
+.humei, .wuye , .qingye, .yinju {
+    width: 26%;
+    height: 105px;
+    left: 150px;
+    position: relative;
+    border-radius: 15px;
+}
+
+.chunyuan, .tiaoshansi, .daoheqi, .hejiugunan {
+    width: 26%;
+    height:105px;
+    left: 250px;
+    position: relative;
+    border-radius: 15px;
+}

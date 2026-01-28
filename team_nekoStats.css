@@ -1,0 +1,43 @@
+ body{
+            background-image: url("teams/Neko back.jpg") ;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        body::before {
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;    
+        background-color: rgba(0, 0, 0, 0.4); 
+        z-index: -1; /* Keep it behind all content */
+        }
+
+        .NekoStats{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width:480px;
+            height: fit-content;
+            size: relative;
+            border-radius: 15px;
+        }
+              .audio-container {
+            display: flex;
+            align-items: center;
+            margin-right: 50px; 
+            position:relative;
+        }
+        
+        audio {
+            height: 30px;
+            width: 200px;
+            filter: invert(82%);
+        }
